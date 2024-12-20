@@ -3,10 +3,197 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product - Detail</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Product - detail</title>
+    <link rel="stylesheet" href="./styles//index.css" />
   </head>
   <body>
-    <script type="module" href="script.js"></script>
+    <main>
+      <section class="container">
+        <!-- image section  -->
+        <div class="thumbnail">
+          <img
+            src="./assets/images/bands/purple_band.png"
+            alt="band"
+            id="thumbnail-image"
+          />
+        </div>
+        <!-- details section  -->
+        <div class="details">
+          <h2 class="product-title">Classy Modern Smart watch</h2>
+          <!-- review section  -->
+          <div id="review">
+            <div class="review-images">
+              <img
+                class="star-fill"
+                src="./assets/images/stars/star-fill.png"
+                alt=""
+              />
+              <img
+                class="star-fill"
+                src="./assets/images/stars/star-fill.png"
+                alt=""
+              />
+              <img
+                class="star-fill"
+                src="./assets/images/stars/star-fill.png"
+                alt=""
+              />
+              <img
+                class="star-half-fill"
+                src="./assets/images/stars/star-half-fill.png"
+                alt=""
+              />
+              <img class="star" src="./assets/images/stars/star.png" alt="" />
+            </div>
+            <p id="review-details">(<span>2</span> Reviews)</p>
+          </div>
+          <!-- product price  -->
+          <p class="product-price">
+            <span id="price">$99.00</span>
+            <span id="latest-price">$79.00</span>
+          </p>
+          <!-- description  -->
+          <div id="description">
+            <p>
+              I must explain to you how all this mistaken idea of denoun cing
+              ple praising pain was born and I will give you a complete account
+              of the system, and expound the actual teaching.
+            </p>
+          </div>
+          <!-- type and model  -->
+          <div class="type-model">
+            <div class="category">
+              <p class="title">Type</p>
+              <p class="detail">Watch</p>
+            </div>
+            <div class="category">
+              <p class="title">Model Number</p>
+              <p class="detail">Forerunner 290XT</p>
+            </div>
+          </div>
+          <!-- band color  -->
+          <div class="band-color">
+            <p>Band Color</p>
+            <div class="colors">
+              <div class="purple color selectedPurple"></div>
+              <div class="cyan color"></div>
+              <div class="blue color"></div>
+              <div class="black color"></div>
+            </div>
+          </div>
+          <!-- wrist size -->
+          <div class="size">
+            <p>Wrist Size</p>
+            <div class="size-buttons">
+              <div class="button-s size-button">
+                <span id="size-s" class="size-name">S</span>
+                <span id="price-s" class="size-prize">$69</span>
+              </div>
+              <div class="button-m size-button">
+                <span id="size-m" class="size-name">M</span>
+                <span id="price-m" class="size-prize">$79</span>
+              </div>
+              <div class="button-l size-button">
+                <span id="size-l" class="size-name">L</span>
+                <span id="price-l" class="size-prize">$89</span>
+              </div>
+              <div class="button-xl size-button">
+                <span id="size-xl" class="size-name">XL</span>
+                <span id="price-xl" class="size-prize">$99</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- cart add remove  -->
+          <div class="action">
+            <div class="add-remove">
+              <div class="minus"><p>-</p></div>
+              <div class="value">0</div>
+              <div class="plus"><p>+</p></div>
+            </div>
+            <button class="cart">Add to Cart</button>
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.5 18.3729C10.391 18.3729 10.2881 18.3547 10.1912 18.3184C10.1064 18.2699 10.0277 18.2154 9.95508 18.1549L3.39785 11.5977C2.96191 11.1496 2.6168 10.635 2.3625 10.0537C2.1082 9.46035 1.98105 8.83066 1.98105 8.16465C1.98105 7.48652 2.1082 6.85684 2.3625 6.27559C2.6168 5.68223 2.96191 5.16758 3.39785 4.73164C3.83379 4.28359 4.34844 3.93242 4.9418 3.67812C5.53516 3.42383 6.16484 3.29668 6.83086 3.29668C7.49687 3.29668 8.12656 3.42383 8.71992 3.67812C9.31328 3.93242 9.82793 4.28359 10.2639 4.73164L10.5 4.96777L10.7361 4.71348C11.1721 4.27754 11.6807 3.93242 12.2619 3.67812C12.8553 3.42383 13.485 3.29668 14.151 3.29668C14.1631 3.29668 14.1691 3.29668 14.1691 3.29668C14.1813 3.29668 14.1873 3.29668 14.1873 3.29668C14.8533 3.29668 15.477 3.42383 16.0582 3.67812C16.6516 3.93242 17.1662 4.28359 17.6021 4.73164C18.0381 5.16758 18.3832 5.68223 18.6375 6.27559C18.8918 6.85684 19.0189 7.48652 19.0189 8.16465C19.0189 8.83066 18.8918 9.46035 18.6375 10.0537C18.3832 10.635 18.0381 11.1496 17.6021 11.5977L11.0449 18.1549C10.9723 18.2154 10.8875 18.2699 10.7906 18.3184C10.7059 18.3547 10.609 18.3729 10.5 18.3729ZM6.83086 4.85879C5.92266 4.85879 5.1416 5.17969 4.4877 5.82148C3.8459 6.46328 3.525 7.24434 3.525 8.16465C3.525 8.6127 3.60977 9.04258 3.7793 9.4543C3.96094 9.85391 4.19707 10.199 4.4877 10.4896L10.5 16.502L16.5123 10.4896C16.8029 10.199 17.033 9.85391 17.2025 9.4543C17.3842 9.04258 17.475 8.6127 17.475 8.16465C17.475 7.70449 17.3842 7.27461 17.2025 6.875C17.033 6.47539 16.8029 6.12422 16.5123 5.82148C16.2096 5.51875 15.8584 5.28262 15.4588 5.11309C15.0592 4.94355 14.6354 4.85879 14.1873 4.85879C14.1752 4.85879 14.1691 4.85879 14.1691 4.85879C13.709 4.85879 13.2791 4.94355 12.8795 5.11309C12.4799 5.28262 12.1348 5.51875 11.8441 5.82148H11.826L11.0449 6.60254C10.9723 6.6752 10.8875 6.73574 10.7906 6.78418C10.7059 6.82051 10.609 6.83867 10.5 6.83867C10.391 6.83867 10.2881 6.82051 10.1912 6.78418C10.1064 6.73574 10.0277 6.6752 9.95508 6.60254L9.17402 5.82148C8.87129 5.51875 8.52012 5.28262 8.12051 5.11309C7.7209 4.94355 7.29102 4.85879 6.83086 4.85879Z"
+                fill="#6576FF"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <div class="modal" id="cart-modal">
+        <div class="modal-content">
+          <h2>Your Cart</h2>
+          <div class="cart-items">
+            <div class="cart-title">
+              <p class="item">Item</p>
+              <p class="color-item">Color</p>
+              <p class="size-item">Size</p>
+              <p class="quantity-item">Qnt</p>
+              <p class="price-item">Price</p>
+            </div>
+          </div>
+          <div class="cart-items">
+            <div class="cart-title">
+              <div class="item">
+                <img src="./assets//images/bands/black_band.png" alt="" />
+                <p>Classy modern Smart watch</p>
+              </div>
+              <p class="color-item single-name">Black</p>
+              <p class="size-item single">XL</p>
+              <p class="quantity-item single">1</p>
+              <p class="price-item single">$99.00</p>
+            </div>
+          </div>
+          <div class="cart-items">
+            <div class="cart-title">
+              <div class="item">
+                <img src="./assets//images/bands/purple_band.png" alt="" />
+                <p>Classy modern Smart watch</p>
+              </div>
+              <p class="color-item single-name">Purple</p>
+              <p class="size-item single">L</p>
+              <p class="quantity-item single">2</p>
+              <p class="price-item single">$178.00</p>
+            </div>
+          </div>
+          <div class="cart-items">
+            <div class="cart-title">
+              <div class="item">
+                <img src="./assets//images/bands/cyan_band.png" alt="" />
+                <p>Classy modern Smart watch</p>
+              </div>
+              <p class="color-item single-name">Cyan</p>
+              <p class="size-item single">M</p>
+              <p class="quantity-item single">1</p>
+              <p class="price-item single">$79.00</p>
+            </div>
+          </div>
+          <!-- cart total  -->
+          <div class="cart-total">
+            <p class="total">Total</p>
+            <p class="quantity">4</p>
+            <span class="total-amount">$356.00</span>
+          </div>
+          <div class="modal-buttons">
+            <div class="continue-shopping" onclick="closeModal()">
+              Continue Shopping
+            </div>
+            <div class="checkout">Checkout</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="floating-cart" onclick="openModal()">
+        Checkout <span class="cart-count">2</span>
+      </div>
+    </main>
   </body>
 </html>
