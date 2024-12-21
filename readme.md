@@ -8,12 +8,10 @@ Now, I will begin working on the React version of this project.
 This is a detailed product page for a "Classy Modern Smart Watch" that includes various sections such as product image, reviews, price, description, band color, wrist size, and an add-to-cart feature. The page also includes a cart modal to view added items, and it allows the user to select different sizes and colors of the product.
 
 ### Markup Languages and Programming Languages
+- HTML
+- CSS
+- JavaScript
 
-HTML
-CSS
-JavaScript
-
-## live link
 
 
 
