@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product - detail</title>
-    <link rel="stylesheet" href="./styles//index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <main>
@@ -19,7 +19,7 @@
         </div>
         <!-- details section  -->
         <div class="details">
-          <h2 class="product-title">Classy Modern Smart watch</h2>
+          <h2 class="product-title"></h2>
           <!-- review section  -->
           <div id="review">
             <div class="review-images">
@@ -45,40 +45,36 @@
               />
               <img class="star" src="./assets/images/stars/star.png" alt="" />
             </div>
-            <p id="review-details">(<span>2</span> Reviews)</p>
+            <p id="review-details">(<span id="review-count"></span> Reviews)</p>
           </div>
           <!-- product price  -->
           <p class="product-price">
-            <span id="price">$99.00</span>
-            <span id="latest-price">$79.00</span>
+            <span id="price"></span>
+            <span id="latest-price"></span>
           </p>
           <!-- description  -->
           <div id="description">
-            <p>
-              I must explain to you how all this mistaken idea of denoun cing
-              ple praising pain was born and I will give you a complete account
-              of the system, and expound the actual teaching.
-            </p>
+            <p></p>
           </div>
           <!-- type and model  -->
           <div class="type-model">
             <div class="category">
               <p class="title">Type</p>
-              <p class="detail">Watch</p>
+              <p class="detail" id="type-detail"></p>
             </div>
             <div class="category">
               <p class="title">Model Number</p>
-              <p class="detail">Forerunner 290XT</p>
+              <p class="detail" id="model-detail"></p>
             </div>
           </div>
           <!-- band color  -->
           <div class="band-color">
             <p>Band Color</p>
             <div class="colors">
-              <div class="purple color selectedPurple"></div>
-              <div class="cyan color"></div>
-              <div class="blue color"></div>
-              <div class="black color"></div>
+              <div class="purple color" id="purple"></div>
+              <div class="cyan color" id="cyan"></div>
+              <div class="blue color" id="blue"></div>
+              <div class="black color" id="black"></div>
             </div>
           </div>
           <!-- wrist size -->
@@ -195,5 +191,6 @@
         Checkout <span class="cart-count">2</span>
       </div>
     </main>
+    <script src="./scripts/main.js" type="module"></script>
   </body>
 </html>
