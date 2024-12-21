@@ -124,7 +124,7 @@
         </div>
       </section>
 
-      <div class="modal" id="cart-modal">
+      <div class="modal hidden" id="cart-modal">
         <div class="modal-content">
           <h2>Your Cart</h2>
           <div class="cart-items">
@@ -136,59 +136,22 @@
               <p class="price-item">Price</p>
             </div>
           </div>
-          <div class="cart-items">
-            <div class="cart-title">
-              <div class="item">
-                <img src="./assets//images/bands/black_band.png" alt="" />
-                <p>Classy modern Smart watch</p>
-              </div>
-              <p class="color-item single-name">Black</p>
-              <p class="size-item single">XL</p>
-              <p class="quantity-item single">1</p>
-              <p class="price-item single">$99.00</p>
-            </div>
-          </div>
-          <div class="cart-items">
-            <div class="cart-title">
-              <div class="item">
-                <img src="./assets//images/bands/purple_band.png" alt="" />
-                <p>Classy modern Smart watch</p>
-              </div>
-              <p class="color-item single-name">Purple</p>
-              <p class="size-item single">L</p>
-              <p class="quantity-item single">2</p>
-              <p class="price-item single">$178.00</p>
-            </div>
-          </div>
-          <div class="cart-items">
-            <div class="cart-title">
-              <div class="item">
-                <img src="./assets//images/bands/cyan_band.png" alt="" />
-                <p>Classy modern Smart watch</p>
-              </div>
-              <p class="color-item single-name">Cyan</p>
-              <p class="size-item single">M</p>
-              <p class="quantity-item single">1</p>
-              <p class="price-item single">$79.00</p>
-            </div>
-          </div>
+          <div class="cart-container"></div>
           <!-- cart total  -->
           <div class="cart-total">
             <p class="total">Total</p>
-            <p class="quantity">4</p>
-            <span class="total-amount">$356.00</span>
+            <p class="quantity"></p>
+            <span class="total-amount"></span>
           </div>
           <div class="modal-buttons">
-            <div class="continue-shopping" onclick="closeModal()">
-              Continue Shopping
-            </div>
+            <div class="continue-shopping">Continue Shopping</div>
             <div class="checkout">Checkout</div>
           </div>
         </div>
       </div>
 
-      <div class="floating-cart" onclick="openModal()">
-        Checkout <span class="cart-count">2</span>
+      <div class="floating-cart floating">
+        Checkout <span class="cart-count"></span>
       </div>
     </main>
     <script src="./scripts/main.js" type="module"></script>
