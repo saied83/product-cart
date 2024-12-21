@@ -10,6 +10,7 @@ This is a detailed product page for a "Classy Modern Smart Watch" that includes 
 - HTML
 - CSS
 - JavaScript
+- React
 
 
 
