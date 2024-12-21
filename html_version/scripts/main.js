@@ -1,4 +1,4 @@
-import { productData } from "./assets/data.js";
+import { productData } from "./data.js";
 
 // DOM Elements
 const thumbnailImage = document.querySelector(".thumbnail img");
