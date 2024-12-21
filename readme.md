@@ -1,4 +1,5 @@
-### can not able to complete this project because I was seen this on 20 December. I can only able to design the page with in 3 hours. As the deadline is today.
+### Can not able to complete this project because I was seen this on 20 December. I can only able to design the page with in 3 hours. As the deadline is today.
+Now I am working on this project again from 21 December Morning.
 
 # Product Detail Page
 
