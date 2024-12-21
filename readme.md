@@ -1,5 +1,7 @@
-### Can not able to complete this project because I was seen this on 20 December. I can only able to design the page with in 3 hours. As the deadline is today.
-Now I am working on this project again from 21 December Morning.
+###I had limited time to work on this project, as I first came across it on December 20th around 5:00 PM. With only 3 hours left until the deadline, I could only design the page using HTML and JavaScript. Today, I added JavaScript functionality to the project (HTML version). Please use a live server for previewing it.
+
+###I hope my submission will be considered for evaluation.
+Now, I will begin working on the React version of this project.
 
 # Product Detail Page
 
@@ -13,7 +15,7 @@ JavaScript
 
 ## live link
 
-<a href="https://product-cart-saied83.netlify.app">live link </a>
+
 
 ## Features
 
