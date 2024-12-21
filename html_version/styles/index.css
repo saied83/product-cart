@@ -23,6 +23,8 @@ main {
   padding: 120px 300px 0px;
   background-color: white;
   position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
@@ -312,6 +314,7 @@ main {
   align-items: center;
   color: var(--primary-color);
   cursor: pointer;
+  user-select: none;
 }
 
 .value {
@@ -332,6 +335,7 @@ main {
   height: 100%;
   color: var(--primary-color);
   cursor: pointer;
+  user-select: none;
 }
 
 .cart {
@@ -357,47 +361,33 @@ svg {
   cursor: pointer;
 }
 
-.modal {
+.hidden {
   visibility: hidden;
+}
+
+.modal {
   position: fixed;
+
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+
   z-index: 100;
   backdrop-filter: gray;
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(gray);
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 .modal-content {
   background-color: white;
   width: 651px;
-  height: 480px;
+  max-height: 480px;
   border-radius: 20px;
   padding: 44px;
   z-index: 101;
-}
-
-.floating-cart {
-  position: fixed;
-  bottom: 31px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 139px;
-  height: 42px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  color: var(--heading-color);
-  line-height: 20px;
-  font-weight: 700;
-  background: #ffbb5a;
 }
 
 .cart-count {
@@ -548,4 +538,66 @@ svg {
   color: white;
   background: var(--button-color);
   cursor: pointer;
+}
+
+.cart-animate {
+  position: fixed;
+  bottom: 31px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 139px;
+  height: 42px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--heading-color);
+  line-height: 20px;
+  font-weight: 700;
+  background: #ffbb5a;
+  cursor: pointer;
+  animation: popup 0.5s linear;
+}
+
+@keyframes popup {
+  from {
+    bottom: -130px;
+  }
+  to {
+    bottom: 31px;
+    display: flex;
+  }
+}
+
+.floating {
+  visibility: hidden;
+}
+
+.cart-container {
+  overflow-y: scroll;
+  max-height: 210px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
