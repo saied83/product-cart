@@ -1,4 +1,4 @@
-import { productData } from "../assets/data.js";
+import { productData } from "./assets/data.js";
 
 // DOM Elements
 const thumbnailImage = document.querySelector(".thumbnail img");
@@ -135,8 +135,8 @@ const addToCart = () => {
   if (Object.keys(totalCart).length > 0) {
     floatingCart.classList.remove("floating");
     floatingCart.classList.add("cart-animate");
-    cartCount.textContent = Object.keys(totalCart).length;
   }
+  cartCount.textContent = Object.keys(totalCart).length;
   updateUI();
 };
 
