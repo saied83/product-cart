@@ -9,10 +9,10 @@ export const productData = {
   type: "Watch",
   modelNumber: "Forerunner 290XT",
   bandColorWithImage: {
-    purple: "./assets/images/purple_band.png",
-    blue: "./assets/images/blue_band.png",
-    cyan: "./assets/images/cyan_band.png",
-    black: "./assets/images/black_band.png",
+    purple: "./assets/images/bands/purple_band.png",
+    blue: "./assets/images/bands/blue_band.png",
+    cyan: "./assets/images/bands/cyan_band.png",
+    black: "./assets/images/bands/black_band.png",
   },
   priceWithSize: {
     s: 69,
